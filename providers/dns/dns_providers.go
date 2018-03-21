@@ -60,16 +60,12 @@ func NewDNSChallengeProviderByName(name string) (acme.ChallengeProvider, error) 
 		provider, err = googlecloud.NewDNSProvider()
 	case "godaddy":
 		provider, err = godaddy.NewDNSProvider()
-	case "lightsail":
-		provider, err = lightsail.NewDNSProvider()
 	case "linode":
 		provider, err = linode.NewDNSProvider()
 	case "manual":
 		provider, err = acme.NewDNSProviderManual()
 	case "namecheap":
 		provider, err = namecheap.NewDNSProvider()
-	case "namedotcom":
-		provider, err = namedotcom.NewDNSProvider()
 	case "rackspace":
 		provider, err = rackspace.NewDNSProvider()
 	case "route53":
