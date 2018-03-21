@@ -6,7 +6,6 @@ import (
 
 	"github.com/jtuchscherer/lego/acme"
 	"github.com/jtuchscherer/lego/providers/dns/auroradns"
-	"github.com/jtuchscherer/lego/providers/dns/azure"
 	"github.com/jtuchscherer/lego/providers/dns/cloudflare"
 	"github.com/jtuchscherer/lego/providers/dns/cloudxns"
 	"github.com/jtuchscherer/lego/providers/dns/digitalocean"
@@ -35,8 +34,6 @@ func NewDNSChallengeProviderByName(name string) (acme.ChallengeProvider, error) 
 	var err error
 	var provider acme.ChallengeProvider
 	switch name {
-	case "azure":
-		provider, err = azure.NewDNSProvider()
 	case "auroradns":
 		provider, err = auroradns.NewDNSProvider()
 	case "cloudflare":
