@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xenolf/lego/acme"
+	"github.com/jtuchscherer/lego/acme"
 )
 
 // Gandi API reference:       http://doc.livedns.gandi.net/

@@ -10,7 +10,7 @@ import (
 
 	"bytes"
 	"encoding/json"
-	"github.com/xenolf/lego/acme"
+	"github.com/jtuchscherer/lego/acme"
 	"io/ioutil"
 	"strings"
 )
